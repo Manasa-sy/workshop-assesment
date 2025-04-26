@@ -1,0 +1,11 @@
+Question no 2:
+for input1 in range(1, 6):
+    for input2 in range(1, 6):
+        if input2 == 5:
+            print(input1 + 1, end="")
+        else:
+            if input1 % 2 == 0:
+                print(input1 + 1, end="")
+            else:
+                print(input1, end="")
+    print()
