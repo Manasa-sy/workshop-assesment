@@ -1,0 +1,27 @@
+##Question no 3
+def checkdisarium(number):
+    num_str = str(number)
+    total = 0
+    for i in range(len(num_str)):
+        digit = int(num_str[i])
+        total = total + (digit ** (i + 1))
+    if total == number:
+        return True
+    else:
+        return False
+n = int(input("Expected disarium numbers"))
+num = 0
+count = 0
+while count < n:
+    if checdisarium(number):
+        print(number, end=" ")
+        count = count + 1
+    number = number + 1
+
+print() 
+start = int(input("Enter start number: "))
+end = int(input("Enter end number: "))
+
+for num in range(start, end + 1):
+    if checkdisarium(num):
+        print(num, end=" ")
