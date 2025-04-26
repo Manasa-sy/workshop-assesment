@@ -14,3 +14,48 @@ def maximumsteal(values):
     return temp[-1]
 values = [6, 7, 1, 3, 8, 2, 5]
 print(maximumsteal(values))
+
+
+##Question no 2
+
+for input1 in range(1, 6):
+    for input2 in range(1, 6):
+        if input2 == 5:
+            print(input1 + 1, end="")
+        else:
+            if input1 % 2 == 0:
+                print(input1 + 1, end="")
+            else:
+                print(input1, end="")
+    print()
+
+##Question no 3
+
+##Question no 3
+def checkdisarium(number):
+    num_str = str(number)
+    total = 0
+    for i in range(len(num_str)):
+        digit = int(num_str[i])
+        total = total + (digit ** (i + 1))
+    if total == number:
+        return True
+    else:
+        return False
+n = int(input("Expected disarium numbers"))
+num = 0
+count = 0
+while count < n:
+    if checdisarium(number):
+        print(number, end=" ")
+        count = count + 1
+    number = number + 1
+
+print() 
+start = int(input("Enter start number: "))
+end = int(input("Enter end number: "))
+
+for num in range(start, end + 1):
+    if checkdisarium(num):
+        print(num, end=" ")
+
